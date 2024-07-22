@@ -71,7 +71,7 @@ public class Guess_number {
         hint.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Its a number Between 1 to 10", "You Got it!!",
+                JOptionPane.showMessageDialog(null, "Its a number Between 1 to 10", "Hint",
                         JOptionPane.INFORMATION_MESSAGE);
             }
         });
@@ -81,10 +81,10 @@ public class Guess_number {
             public void actionPerformed(ActionEvent e) {
                 int num = Integer.parseInt(myTextField.getText());
                 if (num == random_int) {
-                    JOptionPane.showMessageDialog(null, "You Guess the correct number", "Nice Try",
+                    JOptionPane.showMessageDialog(null, "You Guess the correct number", "You Aced it!!",
                             JOptionPane.INFORMATION_MESSAGE);
                 } else {
-                    JOptionPane.showMessageDialog(null, "Wrong number!", "Invalid Input",
+                    JOptionPane.showMessageDialog(null, "Wrong number!", "Nice try",
                             JOptionPane.ERROR_MESSAGE);
                 }
             }
